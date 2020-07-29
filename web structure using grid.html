@@ -6,6 +6,12 @@
 	<style>
 		
 		*{margin: 0; padding: 0; box-sizing: border-box;}
+        
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
 
 		main
 		{
@@ -14,15 +20,19 @@
 			border: 1px solid black;
 			color: white;
 			display: grid;
-			grid-template-rows: 60px 100px 200px 60px;
-			grid-template-columns: repeat(3, 1fr) 150px;
-			grid-gap: 20px;  
+			grid-template-rows: 60px 200px 260px 60px;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 10px;  
 		}
 
 		.div1 
 		{
 			background-color: #ff4757; 
 			grid-column: 1/-1; 
+            text-align: center;
+            font-size: 46px;
+            font-weight: 700;
+            letter-spacing: 2px;
 		}
 
 		.div2 
@@ -67,12 +77,12 @@
 	<main>
 		
 		<div class="div1">header</div>
-		<div class="div2">box 1</div>
-		<div class="div3">box 2</div>
-		<div class="div4">box 3</div>
-		<div class="div5">slider</div>
-		<div class="div6">main</div>
-		<div class="div7">footer</div>
+		<div class="div2"><img src="https://images.pexels.com/photos/2682877/pexels-photo-2682877.jpeg?cs=srgb&dl=white-pebbles-2682877.jpg&fm=jpg" alt="pic"></div>
+		<div class="div3"><img src="https://images.pexels.com/photos/2820884/pexels-photo-2820884.jpeg?cs=srgb&dl=person-standing-in-front-of-motorcycle-2820884.jpg&fm=jpg" alt="pic"></div>
+		<div class="div4"><img src="https://images.pexels.com/photos/3967669/pexels-photo-3967669.jpeg?cs=srgb&dl=grayscale-photo-of-person-walking-on-street-3967669.jpg&fm=jpg" alt="pic"></div>
+		<div class="div5"><img src="https://images.pexels.com/photos/1122409/pexels-photo-1122409.jpeg?cs=srgb&dl=coconut-tree-under-gray-sky-1122409.jpg&fm=jpg" alt="pic"></div>
+		<div class="div6"><img src="https://images.pexels.com/photos/945966/pexels-photo-945966.jpeg?cs=srgb&dl=dream-big-signage-945966.jpg&fm=jpg" alt="pic"></div>
+		<div class="div7" style="text-align: center">Copyright &copy 2020</div>
 
 
 	</main>
